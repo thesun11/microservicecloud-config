@@ -3,10 +3,10 @@ spring:
     active:
     - dev
 
----
-
 server:
   port: 8001
+
+
 spring:
   profiles: dev
   application:
@@ -22,7 +22,7 @@ spring:
       initial-size: 5                                        
       max-total: 5                                           
       max-wait-millis: 200                                   
- mybatis:
+mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml         
   type-aliases-package: com.atguigu.springcloud.entities     
   mapper-locations:
@@ -36,13 +36,6 @@ eureka:
     instance-id: dept-8001.com
     prefer-ip-address: true      
 
-info: 
-  app.name: atguigu-microservicecloud-springcloudconfig01
-  company.name: www.atguigu.com
-  build.artifactId: @project.artifactId@
-  build.version: @project.version@
-
----
 
 server:
   port: 8001
@@ -61,7 +54,7 @@ spring:
       initial-size: 5                                        
       max-total: 5                                         
       max-wait-millis: 200                                  
- mybatis:
+mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        
   type-aliases-package: com.atguigu.springcloud.entities     
   mapper-locations:
@@ -74,9 +67,3 @@ eureka:
   instance:
     instance-id: dept-8001.com
     prefer-ip-address: true     
-
-info: 
-  app.name: atguigu-microservicecloud-springcloudconfig02
-  company.name: www.atguigu.com
-  build.artifactId: @project.artifactId@
-  build.version: @project.version@
